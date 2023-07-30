@@ -1,0 +1,28 @@
+/* Estilos personalizados para el cubo */
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px;
+    float: left;
+}
+
+/* Estilos personalizados para el cubo azul */
+.cube-blue {
+    background-color: blue;
+}
+
+/* Estilos para el contador */
+.counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
+    font-size: 50px;
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+}
