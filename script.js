@@ -65,7 +65,7 @@ function moverCubo(id) {
             } else {
                 ganador = 'Empate';
             }
-            alert(`¡${ganador} es el ganador!`);
+            alert(`${ganador} es el ganador😁👍`);
 
             // Reiniciar el juego
             count = 0;
@@ -80,11 +80,15 @@ function moverCubo(id) {
         counter.innerText = count;
     }
 
-    // Calcular nuevas coordenadas para la posición del cubo
-    const nuevaPosicionX = Math.random() * (window.innerWidth - cubo.offsetWidth);
-    const nuevaPosicionY = Math.random() * (window.innerHeight - cubo.offsetHeight);
-
-    // Aplicar la nueva posición al cubo
-    cubo.style.left = nuevaPosicionX + 'px';
-    cubo.style.top = nuevaPosicionY + 'px';
+     // Calcular las dimensiones máximas del área permitida para el cubo
+     const maxPosX = window.innerWidth - 500;
+     const maxPosY = window.innerHeight - 500;
+ 
+     // Calcular nuevas coordenadas para la posición del cubo dentro del área permitida
+     const nuevaPosicionX = Math.random() * maxPosX;
+     const nuevaPosicionY = Math.random() * maxPosY;
+ 
+     // Aplicar la nueva posición al cubo
+     cubo.style.left = nuevaPosicionX + 'px';
+     cubo.style.top = nuevaPosicionY + 'px';
 }

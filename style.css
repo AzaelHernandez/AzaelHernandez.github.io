@@ -1,8 +1,13 @@
+body{
+    background-color: rgb(15, 23, 79);
+    color:white ;
+}
 /* Estilos personalizados para el cubo */
 .cube {
     width: 100px;
     height: 100px;
     background-color: red;
+    border-radius: 50px;
     position: relative;
     cursor: pointer;
     transition: 0.5s;
