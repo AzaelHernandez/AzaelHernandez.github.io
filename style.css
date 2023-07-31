@@ -1,6 +1,7 @@
 body{
     background-color: rgb(15, 23, 79);
     color:white ;
+    font-size:30px;
 }
 /* Estilos personalizados para el cubo */
 .cube {
